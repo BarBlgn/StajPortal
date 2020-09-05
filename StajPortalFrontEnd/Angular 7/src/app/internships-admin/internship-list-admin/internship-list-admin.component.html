@@ -1,0 +1,23 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Firma</th>
+      <th scope="col">Firma Adresi</th>
+      <th scope="col">Alan</th>
+      <th scope="col">Maaş</th>
+      <th scope="col">Detay</th>
+      <th scope="col">Başvuru Türü</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let st of service.list">
+    <td (click)="populateForm(st)">{{st.CompanyName}}</td>
+    <td (click)="populateForm(st)">{{st.Address}}</td>
+    <td (click)="populateForm(st)">{{st.Field}}</td>
+    <td (click)="populateForm(st)">{{st.Salary}}</td>
+    <td (click)="populateForm(st)">{{st.Explanation}}</td>
+    <td (click)="populateForm(st)">{{st.HowApplied}}</td>
+    <td>
+      <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(st.InternshipId)" ></i>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,17 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Soru</th>
+      <th scope="col">Cevap</th>
+      <th scope="col">Detay</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let ml of service.listTwo">
+    <td (click)="populateForm(ml)">{{ml.Questions}}</td>
+    <td (click)="populateForm(ml)">{{ml.Answers}}</td>
+    <td (click)="populateForm(ml)">{{ml.Explanation}}</td>
+    <td>
+      <i class="far fa-trash-alt fa-lg text-danger" (click)="onDeleteInterview(ml.InterviewId)"></i>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,20 @@
+<nav class="navbar navbar-dark bg-dark">
+  <button type="button" class="btn btn-outline-secondary" (click)="onHomePage()">StajPortal</button>
+ <button class="btn bg-success my-2 my-sm-0" (click)="onInternship()">Stajlar</button>
+ <button class="btn bg-success my-2 my-sm-0" (click)="onInterview()">Mülakatlar</button>
+ <button class="btn bg-info my-2 my-sm-0" (click)="onAdminPanel()">Admin Paneli</button>
+  <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Çıkış</button>   
+  </nav>
+
+<div class="jumbtron">
+  <h1 class="display-4 text-center">Staj İşlemleri</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-5">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-7">
+      <router-outlet name="outlet1"></router-outlet>
+    </div>
+  </div>
+</div>

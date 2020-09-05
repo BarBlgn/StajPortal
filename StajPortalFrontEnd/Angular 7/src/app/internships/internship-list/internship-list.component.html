@@ -1,0 +1,20 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Firma</th>
+      <th scope="col">Firma Adresi</th>
+      <th scope="col">Alan</th>
+      <th scope="col">Maaş</th>
+      <th scope="col">Detay</th>
+      <th scope="col">Başvuru Türü</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let st of service.list">
+    <td>{{st.CompanyName}}</td>
+    <td>{{st.Address}}</td>
+    <td>{{st.Field}}</td>
+    <td>{{st.Salary}}</td>
+    <td>{{st.Explanation}}</td>
+    <td>{{st.HowApplied}}</td>
+  </tr>
+</table>

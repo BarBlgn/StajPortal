@@ -1,0 +1,17 @@
+<nav class="navbar navbar-dark bg-dark">
+    <!---<a class="navbar-brand text-white" (click)="onHomePage()">Staj Portal </a>--->
+    <button type="button" class="btn btn-outline-secondary" (click)="onHomePage()">StajPortal</button>
+   <button class="btn bg-success my-2 my-sm-0" (click)="onInternship()">Stajlar</button>
+   <button class="btn bg-success my-2 my-sm-0" (click)="onInterview()">Mülakatlar</button>
+   <button class="btn bg-info my-2 my-sm-0" (click)="onAdminPanel()">Admin Paneli</button>
+    <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Çıkış</button>   
+</nav> 
+
+<div class="card m-5" style="width:18rem" *ngIf="userDetails">
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Kullanıcı Adı : </strong>{{userDetails.UserName}}</li>
+      <li class="list-group-item"><strong>Ad-Soyad : </strong>{{userDetails.FullName}}</li>
+      <li class="list-group-item"><strong>Email : </strong>{{userDetails.Email}}</li>
+      <li class="list-group-item"><strong>Okul : </strong>{{userDetails.School}}</li>
+    </ul>
+  </div>

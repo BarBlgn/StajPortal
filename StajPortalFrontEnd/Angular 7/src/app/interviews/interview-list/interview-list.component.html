@@ -1,0 +1,14 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Soru</th>
+      <th scope="col">Cevap</th>
+      <th scope="col">Detay</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let ml of service.listTwo">
+    <td>{{ml.Questions}}</td>
+    <td>{{ml.Answers}}</td>
+    <td>{{ml.Explanation}}</td>
+  </tr>
+</table>
